@@ -1,144 +1,379 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel = "stylesheet" href = "formulario.css">
-</head>
-<body>
-<form>
-    <div class = "container">
 
-    <h1>FORMULARIO DE INSCRIÇÃO</h1>
+<html lang="pt-BR">
+
+<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Formulário de Inscrição</title> <link rel="stylesheet" href="formulario.css"> </head>
+
+<body>
+
+<form>
+
+<div class="container">
+
+    <h1>FORMULÁRIO DE INSCRIÇÃO</h1>
 
     <hr>
 
-    <h1>Dados Pessoais</h1>
+    <h2>Dados Pessoais</h2>
 
-    <div class = "secao">
-        <label  for="email">E-mail</label>
-        <input type="email" id =  "email" name = "email"  placeholder="Digite seu Email" required>        
+    <div class="secao">
+
+        <label for="email">E-mail</label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu Email"
+            required
+        >
+
     </div>
 
-    <div class = "secao">
-        <label for = "password">Senha</label>
-        <input type="password" id="password" name="password" placeholder="Digite sua Senha" required>
+
+    <div class="secao">
+
+        <label for="password">Senha</label>
+
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Digite sua Senha"
+            required
+        >
+
     </div>
 
-    <div class = "secao">
-        <label for = "telefone">Telefone</label>
-        <input type="tel" id="telefone" name="telefone" placeholder="Digite o seu Numero" required>
+
+    <div class="secao">
+
+        <label for="telefone">Telefone</label>
+
+        <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="Digite o seu Numero"
+            required
+        >
+
     </div>
 
-    <div class = "secao">
-        <label for = "data">Data de Nascimento</label>
-        <input type = "date" id = "nascimento" name="data_nascimento" placeholder="DD/MM/AAAA" required>
+
+    <div class="secao">
+
+        <label for="nascimento">Data de Nascimento</label>
+
+        <input
+            type="date"
+            id="nascimento"
+            name="data_nascimento"
+            required
+        >
+
     </div>
 
-    <h1>Informações Acadêmicas</h1>
 
-    <div class = "custom-select">
-        <label for = "cursos"> Escolha o seu curso:</label>
-        <select name = "curso_escolhido" id = "curso" required>
-            <option value = "" disabled selected>Selecione um curso...</option>
-            <option value = "Analise e Desenvolvimento de Sistemas">Analise e Desenvolvimento de Sistemas</option>
-            <option value = "Bacharelado em Sistema de Informacao">Bacharelado em Sistema de Informacao</option>
-            <option value = "Engenharia de Software">Engenharia de Software</option>
-            <option value = "Ciencia da Computacao">Ciencia da Computacao</option>
-        </select>   
+    <h2>Informações Acadêmicas</h2>
+
+
+    <div class="custom-select">
+
+        <label for="curso">Escolha o seu curso:</label>
+
+        <select
+            name="curso_escolhido"
+            id="curso"
+            required
+        >
+
+            <option value="" disabled selected>
+                Selecione um curso...
+            </option>
+
+            <option value="Analise e Desenvolvimento de Sistemas">
+                Analise e Desenvolvimento de Sistemas
+            </option>
+
+            <option value="Bacharelado em Sistema de Informacao">
+                Bacharelado em Sistema de Informacao
+            </option>
+
+            <option value="Engenharia de Software">
+                Engenharia de Software
+            </option>
+
+            <option value="Ciencia da Computacao">
+                Ciencia da Computacao
+            </option>
+
+        </select>
+
     </div>
 
-    <div class = "custom-select">
-        <label for = "periodo"> Escolha o seu Periodo</label>
-        <select name = "periodo" id = "periodo" required>
-            <option value = "" disabled selected>Selecione o Periodo...</option>
-            <option value = "1° Periodo">1° Periodo</option>
-            <option value = "2° Periodo">2° Periodo</option>
-            <option value = "3° Periodo">3° Periodo</option>
-            <option value = "4° Periodo">4° Periodo</option>
-            <option value = "5° Periodo">5° Periodo</option>
-            <option value = "6° Periodo">6° Periodo</option>
-            <option value = "7° Periodo">7° Periodo</option>
-            <option value = "8° Periodo">8° Periodo</option>
-        </select>   
+
+    <div class="custom-select">
+
+        <label for="periodo">Escolha o seu Periodo:</label>
+
+        <select
+            name="periodo"
+            id="periodo"
+            required
+        >
+
+            <option value="" disabled selected>
+                Selecione o Periodo...
+            </option>
+
+            <option value="1° Periodo">1° Periodo</option>
+            <option value="2° Periodo">2° Periodo</option>
+            <option value="3° Periodo">3° Periodo</option>
+            <option value="4° Periodo">4° Periodo</option>
+            <option value="5° Periodo">5° Periodo</option>
+            <option value="6° Periodo">6° Periodo</option>
+            <option value="7° Periodo">7° Periodo</option>
+            <option value="8° Periodo">8° Periodo</option>
+
+        </select>
+
     </div>
 
-    <div class = "custom-select">
-        <label for = "turno"> Escolha o seu Turno</label>
-        <select name = "turno" id = "turno" required>
-            <option value = "" disabled selected>Selecione o Turno...</option>
-            <option value = "Manha">Manha</option>
-            <option value = "Tarde">Tarde</option>
-            <option value = "Noite">Noite</option>
-            <option value = "Integral">Integral</option>
-        </select>   
+
+    <div class="custom-select">
+
+        <label for="turno">Escolha o seu Turno:</label>
+
+        <select
+            name="turno"
+            id="turno"
+            required
+        >
+
+            <option value="" disabled selected>
+                Selecione o Turno...
+            </option>
+
+            <option value="Manha">Manha</option>
+            <option value="Tarde">Tarde</option>
+            <option value="Noite">Noite</option>
+            <option value="Integral">Integral</option>
+
+        </select>
+
     </div>
 
-    <div class = "secao">
-        <label for = "Instituicao">Instituicao de Ensino</label>
-        <input type="text" id="text" name="text" placeholder="Digite a instituicao de ensino" required>
-    </div>
 
-    <h1>Participação no evento</h1>
+    <div class="secao">
 
-    <div class = "secao">
-            <p>Digite o Turno de Preferencia</p>
-  
-        <label>
-            <input type="radio" name="periodo" value="manha"> Manha
+        <label for="instituicao">
+            Instituicao de Ensino
         </label>
+
+        <input
+            type="text"
+            id="instituicao"
+            name="instituicao"
+            placeholder="Digite a instituicao de ensino"
+            required
+        >
+
+    </div>
+
+
+    <h2>Participação no Evento</h2>
+
+
+    <div class="secao">
+
+        <p>Digite o Turno de Preferencia</p>
+
+        <label>
+            <input
+                type="radio"
+                name="periodo_evento"
+                value="manha"
+                required
+            >
+            Manha
+        </label>
+
         <br>
+
         <label>
-            <input type="radio" name="periodo" value="tarde"> Tarde
+            <input
+                type="radio"
+                name="periodo_evento"
+                value="tarde"
+            >
+            Tarde
         </label>
+
         <br>
+
         <label>
-            <input type="radio" name="periodo" value="noite"> Noite
+            <input
+                type="radio"
+                name="periodo_evento"
+                value="noite"
+            >
+            Noite
         </label>
+
     </div>
 
-    <div>
-        <label for = "cursos">Escolha a area de Interesse</label><br>
-        <input type="checkbox" id="cybersecurity" name="areas[]" value="cybersecurity">
-        <label for="cybersecurity">Cybersecurity</label><br>
-        <input type="checkbox" id="desenvolvimento" name="area[]" value="desenvolvimento">
-        <label for="inscricao">Desenvolvimento Rápido</label><br>
-        <input type="checkbox" id="uxui" name="area[]" value="uxui">
-        <label for="inscricao">UX/UI</label><br>
-        <input type="checkbox" id="mercado" name="areas[]" value="mercado">
-        <label for="inscricao">Mercado de trabalho</label><br>
-    </div>
 
     <div>
-    <p>
-        Modalidade de Participação
-    </p>
-    <label for = "presenca"> Escolha como voce quer participar</label>
-        <select name = "presenca" id = "presenca" required>
-            <option value = "" disabled selected>Selecione um...</option>
-            <option value = "Presencial">Presencial</option>
-            <option value = "Hibrido">Hibrido</option>
-            <option value = "Noite">Noite</option>
-            <option value = "Integral">Integral</option>
-        </select>  
-    </div>
-    
-    <div>
-    <label for="mensagem">Deixe sua mensagem:</label><br>
-    <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+
+        <p>Escolha a area de Interesse:</p>
+
+        <input
+            type="checkbox"
+            id="cybersecurity"
+            name="areas[]"
+            value="cybersecurity"
+        >
+
+        <label for="cybersecurity">
+            Cybersecurity
+        </label>
+
+        <br>
+
+
+        <input
+            type="checkbox"
+            id="desenvolvimento"
+            name="areas[]"
+            value="desenvolvimento"
+        >
+
+        <label for="desenvolvimento">
+            Desenvolvimento Rápido
+        </label>
+
+        <br>
+
+
+        <input
+            type="checkbox"
+            id="uxui"
+            name="areas[]"
+            value="uxui"
+        >
+
+        <label for="uxui">
+            UX/UI
+        </label>
+
+        <br>
+
+
+        <input
+            type="checkbox"
+            id="mercado"
+            name="areas[]"
+            value="mercado"
+        >
+
+        <label for="mercado">
+            Mercado de trabalho
+        </label>
+
+        <br>
+
     </div>
 
-    <div>
-        <input type="checkbox" id="compartilhar" name="areas[]" value="compartilhar" required>
-        <label for="compartilhar">Concordo em compartilhar as minhas Informações</label><br>
-    </div>
 
     <div>
-        <button type ="submit">Enviar inscrição</button>
-        <button type = "reset">Limpar formulario</button>
+
+        <p>Modalidade de Participação</p>
+
+        <label for="presenca">
+            Escolha como voce quer participar:
+        </label>
+
+        <select
+            name="presenca"
+            id="presenca"
+            required
+        >
+
+            <option value="" disabled selected>
+                Selecione uma modalidade...
+            </option>
+
+            <option value="Presencial">
+                Presencial
+            </option>
+
+            <option value="Hibrido">
+                Hibrido
+            </option>
+
+            <option value="Online">
+                Online
+            </option>
+
+        </select>
+
     </div>
+
+
+    <div>
+
+        <label for="mensagem">
+            Deixe sua mensagem:
+        </label>
+
+        <br>
+
+        <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="4"
+            cols="50"
+        ></textarea>
+
+    </div>
+
+
+    <div>
+
+        <input
+            type="checkbox"
+            id="compartilhar"
+            name="compartilhar"
+            value="sim"
+            required
+        >
+
+        <label for="compartilhar">
+            Concordo em compartilhar as minhas Informações
+        </label>
+
+        <br>
+
+    </div>
+
+
+    <div>
+
+        <button type="submit">
+            Enviar inscrição
+        </button>
+
+        <button type="reset">
+            Limpar formulario
+        </button>
+
+    </div>
+
 </div>
+
 </form>
+
 </body>
+
 </html>
